@@ -31,7 +31,7 @@
 1. **Clonar el repositorio**:
 
    ```bash
-   git clone https://github.com/web-v2/rips-txt-json.git
+   git clone https://github.com/web-v2/portafolio-softvergara.git
    cd rips-txt-json
    ```
 
