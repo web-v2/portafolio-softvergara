@@ -2,7 +2,7 @@
 
 ## 🚀 Información del Proyecto
 
-**URL:** https://samir-dev.netlify.app/
+**URL:** https://ing-samir-vergara.netlify.app/
 
 ---
 
