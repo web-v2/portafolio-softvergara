@@ -8,40 +8,59 @@ const Projects = () => {
   const { ref, isVisible } = useScrollAnimation();
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "Reto Factus - Consumo de API RESTful",
       description:
-        "Plataforma de comercio electrónico completa con carrito de compras, pasarela de pagos y panel de administración.",
-      technologies: ["React", "Laravel", "MySQL", "Tailwind CSS", "Stripe"],
+        "Se cumplio el reto de construir una aplicación web que consuma una API RESTful de FACTUS, para emitir facturas electrónicas y estas a la vez sean validadas por la DIAN Colombia.",
+      technologies: ["Angular", "API RESTful", "TypeScript", "Tailwind CSS", "JSON"],
       image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&q=80",
-      githubUrl: "https://github.com",
+      githubUrl: "https://github.com/web-v2/factus-frontend",
       liveUrl: "https://example.com",
     },
     {
       title: "Task Management App",
       description:
-        "Aplicación de gestión de tareas con autenticación, colaboración en tiempo real y notificaciones.",
-      technologies: ["Vue.js", "Node.js", "Socket.io", "MongoDB"],
+        "Aplicación de gestión de tareas para proyectos locales, con commits y notas generales así como el manejo de los estados en cada etapa de los diferentes proyectos.",
+      technologies: ["React", "TypeScript", "LocalStorage", "En Desarrollo"],
       image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&q=80",
       githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
+      liveUrl: "https://todo-softvergara.netlify.app/",
     },
     {
-      title: "Portfolio CMS",
+      title: "Tekball - App de ejercicios físicos - Para niños y niñas",
       description:
-        "Sistema de gestión de contenidos para portafolios creativos con editor visual y optimización SEO.",
-      technologies: ["Angular", "Laravel", "PostgreSQL", "Bootstrap"],
-      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&q=80",
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
+        "Aplicación de ejercicios físicos para niños y niñas con seguimiento de progreso, gamificación y puntuaciones. En esta app los usuarios cumplen los retos de ejercicios para fortalecer las habilidades motoras y físicas.",
+      technologies: ["Angular", "API RESTful", "TypeScript", "Bootstrap"],
+      image: "https://images.pexels.com/photos/9648765/pexels-photo-9648765.jpeg?w=800&q=80",
+      githubUrl: "https://github.com/web-v2/TEKBALL",
+      liveUrl: "https://tekball-softvergara-921597.netlify.app",
+      
     },
     {
-      title: "Weather Dashboard",
+      title: "Web Saico Ingeniería",
       description:
-        "Dashboard meteorológico con datos en tiempo real, pronósticos y visualización de mapas interactivos.",
-      technologies: ["React", "API REST", "Chart.js", "Tailwind CSS"],
-      image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&q=80",
+        "Aplicación web para una empresa de ingeniería que muestra sus servicios, proyectos y permite a los clientes solicitar cotizaciones en línea.",
+      technologies: ["React", "API REST", "Netlify", "Tailwind CSS"],
+      image: "https://images.pexels.com/photos/834892/pexels-photo-834892.jpeg",
       githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
+      liveUrl: "https://saico-ingenieria.netlify.app",
+    },
+    {
+      title: "RIPS JSON Assembler - Generador de archivos RIPS",
+      description:
+        "Aplicación web para la generación de archivos RIPS (Res. 2275 de 2023) en formato JSON. Convierte RIPS TXT a JSON y viceversa, facilitando la gestión de información en el sector salud.",
+      technologies: ["React", "JSON", "Netlify", "Tailwind CSS"],
+      image: "https://images.pexels.com/photos/11035481/pexels-photo-11035481.jpeg",
+      githubUrl: "https://github.com/web-v2/rips-txt-json",
+      liveUrl: "https://rips-assembler.netlify.app/",
+    },
+    {
+      title: "AudiRIPS - JSON",
+      description:
+        "Aplicación web Creador y Editor de RIPS JSON (Res. 2275 de 2023). Convierte RIPS TXT a JSON y viceversa, facilitando la gestión de información en el sector salud.",
+      technologies: ["Angular", "JSON", "Netlify", "Tailwind CSS"],
+      image: "https://images.pexels.com/photos/7191157/pexels-photo-7191157.jpeg",
+      githubUrl: "https://github.com/web-v2/audiRIPSJson",
+      liveUrl: "https://audi-rips-json.netlify.app/#/",
     },
   ];
 

@@ -76,8 +76,8 @@ const Contact = () => {
                   className="p-6 bg-card border-border hover:border-primary/50 transition-all duration-300 animate-fade-in"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="flex items-start gap-4">
-                    <div className="p-3 bg-primary/10 rounded-lg">
+                  <div className="flex items-start gap-0">
+                    <div className="p-1 bg-primary/10 rounded-lg">
                       <info.icon className="h-6 w-6 text-primary" />
                     </div>
                     <div>

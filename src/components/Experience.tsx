@@ -6,27 +6,53 @@ const Experience = () => {
   const { ref, isVisible } = useScrollAnimation();
   const workExperience = [
     {
-      title: "Desarrollador Web Junior",
-      company: "Tech Solutions Inc.",
-      period: "2023 - Presente",
+      title: "Desarrollador Web Laravel",
+      company: "Cootrafluvsuc",
+      period: "2025 - Actual",
       description:
-        "Desarrollo de aplicaciones web con Angular y Laravel. Colaboración en proyectos de comercio electrónico y optimización de rendimiento.",
+        "Diseño y desarrollo de una plataforma web para la gestión de vehículos y ventas utilizando Laravel.",
       achievements: [
-        "Reducción del tiempo de carga en un 40%",
-        "Implementación de nuevas funcionalidades",
-        "Trabajo en equipo con metodología Scrum",
+        "Modúlos de gestión de vehículos, ventas y reportes",
+        "Modúlos de administración de usuarios y roles",
+        "Gestión de contratos, prestamos y pagos",
       ],
     },
     {
-      title: "Desarrollador Frontend",
-      company: "Digital Agency",
-      period: "2022 - 2023",
+      title: "Desarrollador Web Laravel",
+      company: "Roberts Motos KE",
+      period: "2025",
       description:
-        "Creación de interfaces de usuario responsivas con React y Vue.js. Colaboración estrecha con diseñadores UX/UI.",
+        "Diseño y desarrollo de una plataforma web para la gestión de inventarios y ventas utilizando Laravel.",
       achievements: [
-        "Desarrollo de 15+ landing pages",
-        "Mejora de accesibilidad web",
-        "Implementación de animaciones CSS avanzadas",
+        "Inventario digitalizado en un 92%",
+        "Facturación de tickets tipo POS",
+        "Gestión de clientes y proveedores",
+      ],
+    },
+    {
+      title: "Desarrollador Frontend Js",
+      company: "Reto Factus",
+      period: "2024",
+      description:
+        "Creación de interfaces de usuario responsivas con Angular para el consumo de API RESTful para facturación electrónica.",
+      achievements: [
+        "Desarrollo de 3 módulos clave del sistema",
+        "Desarrollo de componentes reutilizables",
+        "Desarrollo y despliegue de API RESTful con Node.js y Express Aux a la de Factus",
+        "Implementación de sistema de autenticación y autorización con JWT",
+      ],
+    },
+    {
+      title: "Desarrollador Frontend PHP",
+      company: "Barragan & Urzola Abogados",
+      period: "2023",
+      description:
+        "Diseño y desarrollo de un sistema de gestión completo que incluye módulos de casos legales, contratos, pagos, clientes, etc. utilizando PHP.",
+      achievements: [
+        "Desarrollo de 12 módulos del sistema",        
+        "Despliegue del proyecto en un entorno de producción - Hostinger",
+        "Implementación de sistema de autenticación, roles y permisos",
+        "Optimización de consultas SQL para mejorar el rendimiento",
       ],
     },
     {
@@ -45,16 +71,40 @@ const Experience = () => {
 
   const education = [
     {
-      degree: "Ingeniería en Sistemas",
-      institution: "Universidad Tecnológica",
-      period: "2019 - 2023",
-      description: "Especialización en desarrollo de software y bases de datos.",
+      degree: "Técnico en Programación de Software",
+      institution: "Servicio Nacional de Aprendizaje - SENA",
+      period: "2015",
+      description: "Programación básica, desarrollo con JAVA y bases de datos MySql.",
     },
     {
-      degree: "Bootcamp Full Stack Development",
-      institution: "Coding Academy",
+      degree: "Ingeniería en Sistemas",
+      institution: "Corporación Universitaria Antonio José de Sucre - UAJS",
+      period: "2019 - 2024",
+      description: "Programa académico enfocado en desarrollo de software, bases de datos y redes.",
+    },
+    {
+      degree: "NODE: DE CERO A EXPERTO - Fernando Herrera",
+      institution: "Udemy Inc.",
       period: "2022",
-      description: "Programa intensivo de 6 meses en desarrollo web moderno.",
+      description: "Programa intensivo sobre NODE.js.",
+    },
+    {
+      degree: "VUE JS DE CERO A EXPERTO - Fernando Herrera",
+      institution: "Udemy Inc.",
+      period: "2024",
+      description: "Programa intensivo sobre VUE.js.",
+    },    
+    {
+      degree: "TYPESCRIPT: TU COMPLETA GUÍA Y MANUAL DE MANO. - Fernando Herrera",
+      institution: "Udemy Inc.",
+      period: "2025",
+      description: "Programa intensivo sobre TYPESCRIPT.",
+    },
+    {
+      degree: "ANGULAR DE CERO A EXPERTO - Fernando Herrera",
+      institution: "Udemy Inc.",
+      period: "2025-En curso",
+      description: "Programa intensivo sobre ANGULAR.",
     },
   ];
 
