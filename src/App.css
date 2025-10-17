@@ -18,6 +18,38 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s;
+}
+
+.scroll-to-top:hover {
+  background-color: #0056b3;
+}
+
+.card-about{
+  border-radius: 12px;
+  border: 2px solid;
+}
+
+.card-about:hover{
+  transform: translateY(-5px);
+  background-color: #818cf8;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);

@@ -1,4 +1,4 @@
-import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowRight, Github, Linkedin, Mail, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero-bg.jpg";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
@@ -31,7 +31,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-background/90 backdrop-blur-sm"></div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4 relative z-10" id="inicio">
         <div className="max-w-4xl mx-auto text-center animate-fade-in-up">
           <div className="inline-block mb-6">
             <span className="px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary font-medium text-sm">
@@ -63,25 +63,38 @@ const Hero = () => {
             <a
               href="https://github.com/web-v2"
               target="_blank"
+              title="GitHub"
               rel="noopener noreferrer"
-              className="p-3 bg-card hover:bg-card/80 rounded-full transition-all duration-300 hover:scale-110"
+              className="p-3 bg-card hover:bg-orange-500 rounded-full transition-all duration-300 hover:scale-110"
             >
               <Github className="h-5 w-5" />
             </a>
             <a
               href="https://www.linkedin.com/in/samir-vergara/"
               target="_blank"
+              title="LinkedIn"
               rel="noopener noreferrer"
-              className="p-3 bg-card hover:bg-card/80 rounded-full transition-all duration-300 hover:scale-110"
+              className="p-3 bg-card hover:bg-blue-500 rounded-full transition-all duration-300 hover:scale-110"
             >
               <Linkedin className="h-5 w-5" />
             </a>
             <a
-              href="samirantoniovergaravergara@gmail.com"
-              className="p-3 bg-card hover:bg-card/80 rounded-full transition-all duration-300 hover:scale-110"
+              href="mailto:samirantoniovergaravergara@gmail.com"
+              title="Email"
+              rel="noopener noreferrer"
+              className="p-3 bg-card hover:bg-red-500 rounded-full transition-all duration-300 hover:scale-110"
             >
               <Mail className="h-5 w-5" />
             </a>
+            <a
+              href="https://wa.me/573013456789"
+              target="_blank"
+              title="WhatsApp"              
+              rel="noopener noreferrer"
+              className="p-3 bg-card hover:bg-green-500 rounded-full transition-all duration-300 hover:scale-110"
+            >
+              <MessageCircle className="h-5 w-5" />
+            </a>            
           </div>
         </div>
       </div>
