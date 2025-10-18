@@ -109,6 +109,7 @@ const Contact = () => {
                     href="https://wa.me/573004122688"
                     target="_blank"
                     rel="noopener noreferrer"
+					className="bg-green-600"
                   >
                     Abrir WhatsApp
                   </a>

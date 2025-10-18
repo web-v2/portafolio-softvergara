@@ -87,7 +87,7 @@ const Hero = () => {
               <Mail className="h-5 w-5" />
             </a>
             <a
-              href="https://wa.me/573013456789"
+              href="https://wa.me/573004122688"
               target="_blank"
               title="WhatsApp"              
               rel="noopener noreferrer"

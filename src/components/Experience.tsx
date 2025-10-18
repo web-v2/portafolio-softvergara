@@ -136,7 +136,7 @@ const Experience = () => {
               {workExperience.map((job, index) => (
                 <Card
                   key={index}
-                  className="p-6 bg-card border-border hover:border-primary/50 transition-all duration-300 animate-fade-in"
+                  className="p-6 bg-card border-border hover:border-indigo-500 hover:shadow-lg hover:shadow-indigo-500 transition-all duration-300 animate-fade-in"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
@@ -179,7 +179,7 @@ const Experience = () => {
                       <div className="w-2 h-2 bg-background rounded-full"></div>
                     </div>
                     
-                    <Card className="p-6 bg-card border-border hover:border-accent/50 transition-all duration-300 hover:shadow-lg hover:shadow-accent/10">
+                    <Card className="p-6 bg-card border-border hover:border-accent transition-all duration-300 hover:shadow-lg hover:shadow-accent">
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
                         <h4 className="text-xl font-bold">{edu.degree}</h4>
                         <span className="text-sm text-accent font-medium bg-accent/10 px-3 py-1 rounded-full">

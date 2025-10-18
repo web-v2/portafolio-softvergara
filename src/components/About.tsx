@@ -14,7 +14,7 @@ const About = () => {
         { name: "TypeScript", icon: "typescript" },
         { name: "JavaScript", icon: "javascript" },
         { name: "HTML5", icon: "html5" },
-        { name: "CSS3", icon: "css3" },
+        { name: "CSS3", icon: "css" },
         { name: "Tailwind CSS", icon: "tailwindcss" },
         { name: "Bootstrap", icon: "bootstrap" },
       ],
@@ -25,10 +25,13 @@ const About = () => {
         { name: "Laravel", icon: "laravel" },
         { name: "PHP", icon: "php" },
         { name: "Node.js", icon: "nodedotjs" },
+		{ name: "Express.js", icon: "express" },
         { name: "MySQL", icon: "mysql" },
         { name: "PostgreSQL", icon: "postgresql" },
         { name: "REST APIs", icon: "fastapi" },
-        { name: "GraphQL", icon: "graphql" },
+        { name: "Nestjs", icon: "nestjs" },
+		{ name: "SupaBase", icon: "supabase"},
+		{ name: "Prima", icon: "prisma" }
       ],
     },
     {
@@ -38,9 +41,13 @@ const About = () => {
         { name: "GitHub", icon: "github" },
         { name: "VS Code", icon: "visualstudiocode" },
         { name: "Figma", icon: "figma" },
+		{ name: "NetBeans" , icon: "apachenetbeanside" },
         { name: "Postman", icon: "postman" },
         { name: "Docker", icon: "docker" },
         { name: "Linux", icon: "linux" },
+		{ name: "CLI", icon: "gnometerminal" },
+		{ name: "Pinia", icon: "pinia" },
+		{ name: ".ENV", icon: "dotenv" },
       ],
     },
   ];
@@ -90,7 +97,7 @@ const About = () => {
             {values.map((value, index) => (
               <Card
                 key={index}
-                className="p-6 bg-card border-border hover:border-indigo-500 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 animate-scale-in"
+                className="p-6 bg-card border-border hover:border-indigo-500 transition-all duration-300 hover:shadow-lg hover:shadow-indigo-500 animate-scale-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="mb-4 inline-flex p-3 bg-primary/10 rounded-lg">
@@ -109,7 +116,7 @@ const About = () => {
               {skills.map((skillGroup, index) => (
                 <Card
                   key={index}
-                  className="p-6 bg-card border-border hover:border-primary/50 transition-all duration-300 animate-fade-in"
+                  className="p-6 bg-card border-border hover:border-indigo-500 transition-all duration-300 hover:shadow-lg hover:shadow-indigo-500 animate-fade-in"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <h4 className="text-xl font-semibold mb-4 text-primary">{skillGroup.category}</h4>
@@ -117,7 +124,7 @@ const About = () => {
                     {skillGroup.items.map((skill, skillIndex) => (
                       <div
                         key={skillIndex}
-                        className="flex items-center gap-2 px-3 py-2 bg-secondary text-secondary-foreground rounded-lg text-sm font-medium hover:bg-primary/20 transition-all duration-300 hover:scale-105 group"
+                        className="flex items-center gap-2 px-3 py-2 bg-secondary text-secondary-foreground rounded-lg text-sm font-medium hover:bg-primary/20 transition-all duration-300 hover:scale-125 group"
                       >
                         <img
                           src={`https://cdn.simpleicons.org/${skill.icon}`}

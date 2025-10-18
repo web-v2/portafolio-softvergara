@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Heart } from "lucide-react";
+import { Github, Linkedin, Mail, Heart, MessageCircle } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const Footer = () => {
@@ -23,7 +23,7 @@ const Footer = () => {
                   href="https://github.com/web-v2"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 hover:bg-primary/10 rounded-lg transition-colors"
+                  className="p-2 hover:bg-orange-400 rounded-lg transition-colors"
                   aria-label="GitHub"
                 >
                   <Github className="h-5 w-5" />
@@ -32,17 +32,25 @@ const Footer = () => {
                   href="https://www.linkedin.com/in/samir-vergara/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 hover:bg-primary/10 rounded-lg transition-colors"
+                  className="p-2 hover:bg-blue-400 rounded-lg transition-colors"
                   aria-label="LinkedIn"
                 >
                   <Linkedin className="h-5 w-5" />
                 </a>
                 <a
                   href="mailto:samirantoniovergaravergara@gmail.com"
-                  className="p-2 hover:bg-primary/10 rounded-lg transition-colors"
+                  className="p-2 hover:bg-red-400 rounded-lg transition-colors"				  
                   aria-label="Email"
                 >
                   <Mail className="h-5 w-5" />
+                </a>
+				
+				<a
+                  href="https://wa.me/573004122688"
+                  className="p-2 hover:bg-green-400 rounded-lg transition-colors"
+                  aria-label="WhatsApp"
+                >
+                  <MessageCircle className="h-5 w-5" />
                 </a>
               </div>
             </div>
