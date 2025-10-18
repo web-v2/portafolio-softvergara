@@ -120,9 +120,10 @@ const Contact = () => {
             {/* Contact Form */}
             <div className="lg:col-span-2">
               <Card className="p-8 bg-card border-border">
-                <form onSubmit={handleSubmit} className="space-y-6" data-netlify="true">
+                <form onSubmit={handleSubmit} className="space-y-6" name="contact" method="POST" data-netlify="true">
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="space-y-2">
+                      <input type="hidden" name="form-name" value="contact" />
                       <label htmlFor="name" className="text-sm font-medium">
                         Nombre
                       </label>
