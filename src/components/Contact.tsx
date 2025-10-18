@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -7,26 +7,62 @@ import { Card } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
+interface FormData {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+}
+
 const Contact = () => {
   const { toast } = useToast();
   const { ref, isVisible } = useScrollAnimation();
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
     subject: "",
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  /*const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Aquí iría la lógica para enviar el formulario
+   
     toast({
       title: "Mensaje enviado",
       description: "Gracias por contactarme. Te responderé pronto.",
     });
 
     setFormData({ name: "", email: "", subject: "", message: "" });
+  };*/
+
+   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    const form = event.currentTarget;
+    const formDataToSend = new FormData(form);
+
+    try {
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formDataToSend as any).toString(),
+      });
+
+      toast({
+        title: "Mensaje enviado ✅",
+        description: "Gracias por contactarme. Te responderé pronto.",
+      });
+
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    } catch (error) {
+      console.error(error);
+      toast({
+        title: "Error al enviar",
+        description: "Ocurrió un problema al enviar el mensaje.",
+        variant: "destructive",
+      });
+    }
   };
 
   const contactInfo = [
@@ -120,10 +156,10 @@ const Contact = () => {
             {/* Contact Form */}
             <div className="lg:col-span-2">
               <Card className="p-8 bg-card border-border">
-                <form onSubmit={handleSubmit} className="space-y-6" name="contact" method="POST" data-netlify="true">
+                <form onSubmit={handleSubmit} name="contact" method="POST" data-netlify="true" className="space-y-6">
+                  <input type="hidden" name="form-name" value="contact" />
                   <div className="grid md:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                      <input type="hidden" name="form-name" value="contact" />
+                    <div className="space-y-2">                      
                       <label htmlFor="name" className="text-sm font-medium">
                         Nombre
                       </label>
