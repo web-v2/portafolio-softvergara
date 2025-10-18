@@ -24,18 +24,6 @@ const Contact = () => {
     message: "",
   });
 
-  /*const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-   
-    toast({
-      title: "Mensaje enviado",
-      description: "Gracias por contactarme. Te responderé pronto.",
-    });
-
-    setFormData({ name: "", email: "", subject: "", message: "" });
-  };*/
-
    const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
@@ -156,7 +144,7 @@ const Contact = () => {
             {/* Contact Form */}
             <div className="lg:col-span-2">
               <Card className="p-8 bg-card border-border">
-                <form onSubmit={handleSubmit} name="contact" method="POST" data-netlify="true" className="space-y-6">
+                <form onSubmit={handleSubmit} name="contact" method="POST" data-netlify="true" className="space-y-6" netlify>
                   <input type="hidden" name="form-name" value="contact" />
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="space-y-2">                      
