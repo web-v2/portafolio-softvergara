@@ -141,10 +141,18 @@ const Contact = () => {
               </Card>
             </div>
 
+            <form name="contact" netlify hidden>
+              <input type="text" name="name" />
+              <input type="email" name="email" />
+              <input type="text" name="subject" />
+              <textarea name="message"></textarea>
+            </form>
+
+
             {/* Contact Form */}
             <div className="lg:col-span-2">
               <Card className="p-8 bg-card border-border">
-                <form onSubmit={handleSubmit} name="contact" method="POST" data-netlify="true" className="space-y-6" netlify>
+                <form onSubmit={handleSubmit} name="contact" method="POST" data-netlify="true" className="space-y-6">
                   <input type="hidden" name="form-name" value="contact" />
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="space-y-2">                      

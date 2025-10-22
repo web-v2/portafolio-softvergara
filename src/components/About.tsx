@@ -38,8 +38,7 @@ const About = () => {
       category: "Herramientas",
       items: [
         { name: "Git", icon: "git" },
-        { name: "GitHub", icon: "github" },
-        { name: "VS Code", icon: "visualstudiocode" },
+        { name: "GitHub", icon: "github" },              
         { name: "Figma", icon: "figma" },
 		{ name: "NetBeans" , icon: "apachenetbeanside" },
         { name: "Postman", icon: "postman" },
