@@ -29,6 +29,7 @@ const Contact = () => {
 
     const form = event.currentTarget;
     const formDataToSend = new FormData(form);
+    formDataToSend.append("form-name", form.getAttribute("name") || "contact");
 
     try {
       await fetch("/", {
@@ -141,14 +142,16 @@ const Contact = () => {
               </Card>
             </div>
 
-            <form name="contact" netlify hidden>
-              <input type="text" name="name" />
-              <input type="email" name="email" />
-              <input type="text" name="subject" />
-              <textarea name="message"></textarea>
-            </form>
+            <div className="lg:col-span-2">
+              <form name="contact" data-netlify="true" hidden>
+                <input type="text" name="name" />
+                <input type="email" name="email" />
+                <input type="text" name="subject" />
+                <textarea name="message"></textarea>
+              </form>
+            </div>
 
-
+            
             {/* Contact Form */}
             <div className="lg:col-span-2">
               <Card className="p-8 bg-card border-border">
