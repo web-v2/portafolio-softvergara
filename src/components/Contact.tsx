@@ -143,15 +143,20 @@ const Contact = () => {
             </div>
 
             <div className="lg:col-span-2">
-              <form name="contact" data-netlify="true" hidden>
-                <input type="text" name="name" />
-                <input type="email" name="email" />
-                <input type="text" name="subject" />
-                <textarea name="message"></textarea>
-              </form>
+              <form name="contact" netlify>
+              <p>
+                <label>Name <input type="text" name="name" /></label>
+              </p>
+              <p>
+                <label>Email <input type="email" name="email" /></label>
+              </p>
+              <p>
+                <button type="submit">Send</button>
+              </p>
+            </form>
             </div>
 
-            
+
             {/* Contact Form */}
             <div className="lg:col-span-2">
               <Card className="p-8 bg-card border-border">
